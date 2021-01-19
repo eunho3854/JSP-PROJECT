@@ -4,6 +4,8 @@
 
 <style>
 main {
+	position: relative;
+	z-index: 1;
 }
 
 .carousel-inner {
@@ -14,9 +16,29 @@ main {
 	height: 700px;
 }
 .carousel-caption {
-	color: pink;
+	display:flex;
+	color: pink;	
+	
+	justify-content: space-between;
 }
 .detail-btn {
+	
+	border-radius:5px;
+	border: :1px solid skyblue;
+	
+	background-color: rgba(0,0,0,0);
+	
+	color: skyblue;
+	padding:5px;
+	
+	
+}
+detail-btn-div {
+	
+}
+.detail-btn-div button:hover {
+	color:white;
+	background-color: skyblue;
 }
 </style>
 
@@ -30,26 +52,38 @@ main {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="용두산.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
+      <div>
         <h5>누가봐도 용두산 ㅇㅈ?</h5>
         <p>아무리봐도 용두산이지롱~</p>
-        <div class="detail-btn">
-        <button>자세히 보기</button>
+       </div>
+        <div class="detail-btn-div">
+        <button class="detail-btn">자세히 보기</button>
         </div>
       </div>
     </div>
     <div class="carousel-item">
       <img src="찐광안리.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
+      <div>
         <h5>이게 찐 광안리지</h5>
         <p>광안리 가고 싶다... 데이트하러 가야하는데</p>
+       </div>
+        <div class="detail-btn-div">
+        <button class="detail-btn">자세히 보기</button>
+        </div>
       </div>
     </div>
     <div class="carousel-item">
       <img src="찐막해운대.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>오호... 해운대</h5>
+      <div class="carousel-caption">
+      <div>
+        <h5>오호... 해운대</h5><hr/>
         <p>해운대 안 간지 오래됐네 해운대도 가고싶네</p>
+       </div>
+        <div class="detail-btn-div">
+        <button class="detail-btn">자세히 보기</button>
+        </div>
       </div>
     </div>
   </div>

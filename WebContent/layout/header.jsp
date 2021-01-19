@@ -41,6 +41,8 @@ body {
 
 .header {
 	width: 100%;
+	position: fixed;
+	z-index: 2;
 }
 nav {
 	width: 100%;
